@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1599117573949-63e225331c7b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    font-size: clamp(12px, 4vw, 44px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    text-shadow: 3px 3px grey;
+}
+
+.top, .name, .email, .subject, .message {
+    display: flex;
+    background-color: rgba(200, 200, 200, 0.6);
+    border-radius: 24px;
+    color: black;
+}
+
+.top {
+    width: 80vw;
+    height: 275px;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.forms {
+    width: 37%;
+    float: left;
+    margin-left: 10%;
+}
+
+.name, .email, .subject {
+    margin-top: 30px;
+    height: 70px;
+}
+
+.message {
+    width: 38%;
+    height: 270px;
+    margin-right: 10%;
+    margin-top: 30px;
+    float: right;
+}
+
+.forms input, .message input {
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    width: 80%;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: 50px;
+    margin-right: 38%;
+}
+
+.button input {
+    background: none;
+    font-size: 44px;
+    border-radius: 24px;
+    width: 200px;
+    height: 100px;
+    border: solid 2px whitesmoke;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+
+.top:hover, .name:hover, .email:hover, .subject:hover, .message:hover {
+    box-shadow: 3px 3px rgba(55, 55, 200, 0.5);
+    transition-duration: 0.5s;
+}
+
+
+
+::placeholder {
+    color: black;
+}
+
+.message ::placeholder {
+    position: relative;
+    margin-top: 18px;
+    margin-left: 18px;
+    text-align: left top;
+}
+
+input:required:invalid {
+    border: solid 3px 3px 3px red;
+}
+
+input:required:valid {
+    border: solid 3px 3px 3px green;
+}
