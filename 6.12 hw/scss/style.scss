@@ -1,0 +1,17 @@
+$hover-clr: #023A78;
+$main-clr: #FFFFFF;
+$font: sans-serif;
+$padding: 6px;
+
+* {
+    font-family: $font;
+    color: $main-clr;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    background-color: $hover-clr;
+}
+
+h2, i, p {
+    padding: $padding;
+}

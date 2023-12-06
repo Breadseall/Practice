@@ -1,0 +1,96 @@
+* {
+  font-family: sans-serif;
+  color: #FFFFFF;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  background-color: #023A78;
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+  box-shadow: 6px 6px 2px rgb(50, 50, 50);
+}
+
+h2, i, p {
+  padding: 6px;
+}
+
+* {
+  font-family: sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.a {
+  margin-top: 20%;
+}
+
+.grid {
+  width: 80%;
+  height: 200px;
+  display: grid;
+  margin: auto;
+  gap: 20px 10px;
+  text-align: center;
+}
+
+.card1 {
+  background-color: #044EA0;
+  grid-area: card1;
+}
+
+.card2 {
+  background-color: #0069DE;
+  grid-area: card2;
+}
+
+.card3 {
+  background-color: #0279FF;
+  grid-area: card3;
+}
+
+.card4 {
+  background-color: #4DA1FF;
+  grid-area: card4;
+}
+
+i {
+  font-size: 50px;
+}
+
+@media (min-width: 150px) {
+  .grid {
+
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .grid {
+
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4";
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .grid {
+
+  grid-template-areas: 
+    "card1 card2 card3 card4";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+}
+/*# sourceMappingURL=style.css.map */
