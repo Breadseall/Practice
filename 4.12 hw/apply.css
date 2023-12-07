@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(40, 40, 40) !important;
+    font-size: 22px !important;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 30px;
+    bottom: 30px;
+}
+
+.navbar-brand { 
+    font-size: 34px !important;
+    color: white !important;
+    margin-left: 4% !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: rgb(236,121,105) !important;
+    transition-duration: 0.3s;
+}
+
+.active {
+    color: rgb(236,121,105) !important;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.sidenav {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    margin-left: 97%;
+    margin-top: 20%;
+}
+
+.sidenav > li{ 
+    margin-top: 30px;
+}
+
+.header {
+    color: rgb(236,121,105);
+    font-size: 55px;
+    line-height: 1.2em;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.req {
+    color: rgb(236,121,105);
+    background-color: rgb(50, 50, 50);
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 1000px;
+    text-align: center;
+}
+
+.req > h2, .req > h3, .req > h4 {
+    margin-top: 30px;
+    font-size: 28px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.req > p{
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white;
+    font-size: 15px;
+    line-height: 1.7em;
+}
+
+.red {
+    background-color: rgb(236,121,105);
+    color: rgb(40, 40, 40);
+    padding-top: 50px;
+    margin-left: 23%;
+    margin-right: 23%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.red > p {
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.red > h2, .red > h3 {
+    margin-top: 30px;
+}
+
+.red > h3 {
+    margin-top: 80px;
+}
+
+.red > p > a {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+} 
+
+footer {
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+footer a {
+    color: white;
+}
+
+@media (min-width: 150px) {
+
+    .navbar-brand{
+        font-size: 15px !important;
+    }
+
+    .navbar-nav {
+        font-size: 12px !important;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    .header {
+        margin-top: 300px;
+    }
+
+    .sidenav {
+        margin-left: 90%;
+    }
+
+    .req h2, .req > h3, .req > h4{
+        font-size: 16px;
+    }
+
+    .req {
+        height: 5500px;
+    }
+
+    .red {
+        height: 1650px;
+    }
+}
+
+@media (min-width: 300px) {
+
+    .navbar-brand{
+        font-size: 30px !important;
+    }
+
+    .navbar-nav {
+        font-size: 18px !important;
+    }
+
+    .header {
+        margin-top: 350px;
+    }
+
+    .req h2, .req > h3, .req > h4{
+        font-size: 20px;
+    }
+
+    .req {
+        height: 3500px;
+    }
+
+    .red {
+        height: 1200px;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .navbar-brand{
+        font-size: 34px !important;
+    }
+
+    .navbar-nav {
+        font-size: 22px !important;
+    }
+
+    .header {
+        margin-top: 400px;
+    }
+
+    .req h2, .req > h3, .req > h4{
+        font-size: 24px;
+    }
+
+    .req {
+        height: 2200px;
+    }
+
+    .red {
+        height: 800px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .navbar-brand{
+        font-size: 34px !important;
+    }
+
+    .navbar-nav {
+        font-size: 22px !important;
+    }
+
+    header {
+        position: sticky;
+    }
+
+    .header {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .sidenav {
+        margin-left: 97%;
+    }
+
+    .req h2, .req > h3, .req > h4{
+        font-size: 28px;
+    }
+
+    .req {
+        height: 1700px;
+    }
+
+    .red {
+        height: 600px;
+    }
+
+}
