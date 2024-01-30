@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+form {
+  background-color: #202124;
+  color: white;
+  width: 350px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.form-control {
+  margin: 28px 0;
+}
+
+input {
+  width: 100%;
+  background-color: #202124;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+label,
+input {
+  display: block;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.actions {
+  text-align: end;
+}

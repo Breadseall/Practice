@@ -1,0 +1,77 @@
+<DOCTYPE html>
+    <html lang="eng">
+        <head>
+            <title>Task 4</title>
+            <link rel="stylesheet" href="style.css" />
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial scale=1.0" />
+          </head>
+          <body>
+            <header>
+              <nav>
+                <ul class="nav-links">
+                  <li class="nav-list-item">
+                  <a class="nav-link" href="./home.html">Home</a>
+                  <li class="nav-list-item">
+                  <a class="nav-link" href="./form.html">Fill out our form</a>
+                </ul>
+              </nav>
+            </header>
+            <main>
+                <div class="form-container">
+                    <h1>Contact form</h1>
+                    <form action="https://api.everrest.educata.dev/echo/json" method="post">
+                      <div class="form-control">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name"/>
+                      </div>
+                      <br/>
+                      <div class="form-control">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name"/>
+                      </div>
+                      <br/>
+                      <div class="form-control">
+                        <label for="adress">Adress</label>
+                        <input type="text" id="adress" name="adress"/>
+                      </div>
+                      <br/>
+                      <div class="form-control">
+                        <label for="e-mail">E-mail</label>
+                        <input type="text" id="e-mail" name="e-mail"/>
+                      </div>
+                      <br/>
+                      <div class="form-group">
+                        <label>Gender</label>
+                        <select name="gender">
+                            <option selected="selected" value="gender">-</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Helicopter">Attack Helicopter</option>
+                        </select>
+                      </div>
+                      <br/>
+                      <div>
+                        <p>Desired Vacancies</p>
+                        <br/>
+                        <input type="checkbox" id="Front-End-Developer" name="desired vacancy" value="Front-End-Developer">
+                        <label for="Front-End-Developer">Front-End Developer</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="Back-End-Developer" name="desired vacancy" value="Back-End-Developer">
+                        <label for="Back-End-Developer">Back-End Developer</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="IOS-Developer" name="desired vacancy" value="IOS-Developer">
+                        <label for="IOS-Developer">IOS Developer</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="Linux-System-Admin" name="desired vacancy" value="Linux-System-Admin">
+                        <label for="Linux-System-Admin"> Linux System Administrator</label>
+                      </div>
+                      <br/>
+                      <button>Submit</button>
+                    </form>
+                  </div>
+            </main>
+          </body>
